@@ -12,21 +12,23 @@
 <body>
     <div class="d-flex flex-column min-vh-100">
 
-        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
-            <div class="container-fluid px-4 justify-content-between">
-                <a class="navbar-brand" href="index.html">PORTFOLIO</a>
-                <ul class="navbar-nav nav-links mx-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <nav class="navbar navbar-expand-lg fixed-top site-nav">
+            <div class="container-fluid px-4 site-nav__container">
+                <a class="navbar-brand site-nav__brand" href="index.html">PORTFOLIO</a>
+                <ul class="navbar-nav site-nav__links">
+                    <li class="nav-item"><a class="nav-link site-nav__link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link site-nav__link" href="index.html#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link site-nav__link" href="index.html#contact">Contact</a>
+                    </li>
                 </ul>
-                <div style="width: 100px;"></div>
+                <div></div>
             </div>
         </nav>
 
         <main class="flex-grow-1">
             <div class="container py-5">
-                <article class="section mx-auto" style="max-width: 760px;">
+                <article class="section about-page mx-auto">
                     <h1 class="fw-bold mb-4">About</h1>
 
                     <p>
@@ -48,36 +50,38 @@
                         that means something — to an industry, to a community, or to the people who might use it.
                     </p>
 
-                    <h2 class="h4 fw-bold mt-5 mb-3">Education</h2>
+                    <h2 class="about-page__section-title h4 mt-5 mb-3">Education</h2>
                     <div class="d-flex flex-column gap-3">
 
-                        <div class="card education-item flex-row align-items-center gap-3 p-3">
-                            <div class="education-logo d-flex align-items-center justify-content-center rounded">
-                                <img src="img/cmu.png" alt="cmu"/>
+                        <div class="card education-card flex-row align-items-center gap-3 p-3">
+                            <div class="education-card__logo d-flex align-items-center justify-content-center rounded">
+                                <img src="img/cmu.png" alt="cmu" />
                             </div>
                             <div class="card-body p-0">
-                                <h3 class="h6 fw-bold mb-1">Chiang Mai University</h3>
-                                <p class="text-muted small mb-1">Chiang Mai, Thailand</p>
-                                <p class="fw-semibold small mb-1">Bachelor of Engineering in Computer Engineering</p>
-                                <p class="education-date small fw-bold text-uppercase mb-0">2025 - Present</p>
+                                <h3 class="education-card__name h6 mb-1">Chiang Mai University</h3>
+                                <p class="education-card__location small mb-1">Chiang Mai, Thailand</p>
+                                <p class="education-card__degree small mb-1">Bachelor of Engineering in Computer
+                                    Engineering</p>
+                                <p class="education-card__date small mb-0">2025 - Present</p>
                             </div>
                         </div>
 
-                        <div class="card education-item flex-row align-items-center gap-3 p-3">
-                            <div class="education-logo d-flex align-items-center justify-content-center rounded">
-                                <img src="img/pcshscr.png" alt="pcshscr"/>
+                        <div class="card education-card flex-row align-items-center gap-3 p-3">
+                            <div class="education-card__logo d-flex align-items-center justify-content-center rounded">
+                                <img src="img/pcshscr.png" alt="pcshscr" />
                             </div>
                             <div class="card-body p-0">
-                                <h3 class="h6 fw-bold mb-1">Princess Chulabhorn Science High School Chiang Rai</h3>
-                                <p class="text-muted small mb-1">Chiang Rai, Thailand</p>
-                                <p class="fw-semibold small mb-1">High School · Scholarship</p>
-                                <p class="education-date small fw-bold text-uppercase mb-0">2021 - 2024</p>
+                                <h3 class="education-card__name h6 mb-1">Princess Chulabhorn Science High School
+                                    Chiang Rai</h3>
+                                <p class="education-card__location small mb-1">Chiang Rai, Thailand</p>
+                                <p class="education-card__degree small mb-1">High School · Scholarship</p>
+                                <p class="education-card__date small mb-0">2021 - 2024</p>
                             </div>
                         </div>
 
                     </div>
 
-                    <h2 class="h4 fw-bold mt-5 mb-3">Outside of class</h2>
+                    <h2 class="about-page__section-title h4 mt-5 mb-3">Outside of class</h2>
                     <p class="mb-0">
                         When I step away from screens, I head outdoors — hiking trails, chasing waterfalls,
                         anything that puts distance between me and the noise. There's something a little
@@ -95,8 +99,8 @@
             </div>
         </main>
 
-        <footer class="footer text-center py-3">
-            <p class="small mb-0">© 2026 Nattapat Srirung.</p>
+        <footer class="site-footer text-center py-3">
+            <p class="small site-footer__text mb-0">© 2026 Nattapat Srirung.</p>
         </footer>
 
     </div>
