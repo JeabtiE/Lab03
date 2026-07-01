@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="d-flex flex-column min-vh-100">
+
+        <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+            <div class="container-fluid px-4 justify-content-between">
+                <a class="navbar-brand" href="index.html">PORTFOLIO</a>
+                <ul class="navbar-nav nav-links mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div style="width: 100px;"></div>
+            </div>
+        </nav>
+
+        <main class="flex-grow-1">
+
+            <section class="hero py-5">
+                <div class="container d-flex justify-content-center">
+                    <div class="card hero-card shadow-sm">
+                        <div class="card-body d-flex flex-column flex-md-row align-items-center gap-4 p-4">
+                            <img src="img/my_img.jpg" class="hero-photo rounded-4" alt="my_img" />
+                            <div>
+                                <h1 class="hero-name mb-0">
+                                    <span class="first">Nattapat</span>
+                                    <span class="last">Srirung</span>
+                                </h1>
+                                <p class="hero-tagline text-muted mb-0">
+                                    " Engineer make dreams into reality " <br>- Hayao Miyazaki
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="section py-5 text-center">
+                <div class="container">
+                    <h2 class="mb-3">About</h2>
+                    <p class="text-muted mx-auto mb-3" style="max-width: 640px;">
+                        I'm a Computer Engineering student at Chiang Mai University who builds and looks for
+                        ideas that can make a difference in various industries.
+                    </p>
+                    <a href="about.html" class="link-arrow">Read more →</a>
+                </div>
+            </section>
+
+            <section id="portfolio" class="section py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Portfolio</h2>
+                    <div class="proj-grid">
+
+                        <div class="card proj-card">
+                            <img src="img/watermelon.png" class="proj-img" alt="Watermelon" />
+                            <div class="proj-body">
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge tech-badge">Python</span>
+                                    <span class="badge tech-badge">OpenCV</span>
+                                    <span class="badge tech-badge">Computer Vision</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">Watermelon Weight Measurement</h3>
+                                <p class="text-muted small mb-2">Estimates watermelon weight from images using
+                                    ellipsoidal geometry and definite integration — no scale required.</p>
+                                <input type="checkbox" id="t1" class="read-cb" />
+                                <p class="read-body text-muted small">Uses OpenCV to detect the shape of a watermelon,
+                                    then models it as an ellipsoid and applies definite integration along the X-axis to
+                                    estimate its volume and weight. Accuracy is comparable to conventional weighing
+                                    methods.
+
+                                    Awarded Bronze Medal at Innovation Inventors Day (IYIA) in the Agricultural
+                                    Innovation and Technology category, August 2024.</p>
+                                <label for="t1" class="read-label"></label>
+                                <div class="mt-2">
+                                    <span class="badge award-badge">Bronze Medal · IYIA 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card proj-card">
+                            <img src="img/voxvet.png" class="proj-img" alt="VoxVet" />
+                            <div class="proj-body">
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge tech-badge">Python</span>
+                                    <span class="badge tech-badge">CNN / RNN</span>
+                                    <span class="badge tech-badge">Flutter</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">VoxVet</h3>
+                                <p class="text-muted small mb-2">AI-powered mobile app that detects respiratory diseases
+                                    in cows through real-time sound analysis.</p>
+                                <input type="checkbox" id="t2" class="read-cb" />
+                                <p class="read-body text-muted small">Processes cow audio with Librosa to extract
+                                    features such as MFCCs, then feeds them into a CNN/RNN model trained with
+                                    TensorFlow. The model is served via a Flask API and connected to a Flutter mobile
+                                    app, allowing farmers to assess livestock health directly from their smartphones.
+                                </p>
+                                <label for="t2" class="read-label"></label>
+                            </div>
+                        </div>
+
+                        <div class="card proj-card">
+                            <img src="img/datasci.png" class="proj-img" alt="datasci"/>
+                            <div class="proj-body">
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge tech-badge">Python</span>
+                                    <span class="badge tech-badge">Data Science</span>
+                                    <span class="badge tech-badge">NLP</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">Smart Address Completion System</h3>
+                                <p class="text-muted small mb-2">Autocompletes partial Thai addresses to reduce input
+                                    errors in forms and logistics systems.</p>
+                                <input type="checkbox" id="t3" class="read-cb" />
+                                <p class="read-body text-muted small">Analyzes incomplete address strings and matches
+                                    them against structured datasets to produce full, validated addresses. Selected as a
+                                    finalist from 287 teams nationwide.
+
+                                    Awarded Silver Medal at the Data Science Project Contest 2024, Faculty of Science,
+                                    Chiang Mai University.</p>
+                                <label for="t3" class="read-label"></label>
+                                <div class="mt-2">
+                                    <span class="badge award-badge">Silver Medal · Data Science Contest 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card proj-card">
+                            <img src="img/game_vr.png" class="proj-img" alt="game_vr"/>
+                            <div class="proj-body">
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge tech-badge">Unity</span>
+                                    <span class="badge tech-badge">C#</span>
+                                    <span class="badge tech-badge">Game Dev</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">Game-based VR for Learning Unicellular Animals</h3>
+                                <p class="text-muted small mb-2">A VR game that teaches students to identify unicellular
+                                    organisms through interactive gameplay.</p>
+                                <input type="checkbox" id="t4" class="read-cb" />
+                                <p class="read-body text-muted small">Built in Unity with C#, featuring a point system
+                                    and identification mechanics for unicellular organisms in an immersive virtual
+                                    environment. Presented jointly with Tokyo Gakugei University Senior High School as
+                                    an oral and poster session in English.
+
+                                    Awarded Silver Medal in the Computer Science category at the PCSHS Science Symposium
+                                    2024.</p>
+                                <label for="t4" class="read-label"></label>
+                                <div class="mt-2">
+                                    <span class="badge award-badge">Silver Medal · PCSHS 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card proj-card">
+                            <img src="img/ict_challenge.png" class="proj-img" alt="ict_challenge"/>
+                            <div class="proj-body">
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge tech-badge">Networking</span>
+                                    <span class="badge tech-badge">Algorithms</span>
+                                    <span class="badge tech-badge">AI</span>
+                                    <span class="badge tech-badge">OS</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">ICT Challenge 2024</h3>
+                                <p class="text-muted small mb-2">National CS and IT quiz competition covering
+                                    Networking, Algorithms, AI, and Operating Systems.</p>
+                                <input type="checkbox" id="t5" class="read-cb" />
+                                <p class="read-body text-muted small">Advanced to the semi-finals as one of the top 90
+                                    teams from approximately 220 teams nationwide, then reached the final round among
+                                    the top 10 teams at the Faculty of Information Technology, King Mongkut's University
+                                    of Technology Thonburi.
+
+                                    Awarded Second Runner-Up with a 3,000 THB scholarship, November 2024.</p>
+                                <label for="t5" class="read-label"></label>
+                                <div class="mt-2">
+                                    <span class="badge award-badge">Second Runner-Up · ICT Challenge 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card proj-card">
+                            <img src="img/snp.png" class="proj-img" alt="snp"/>
+                            <div class="proj-body">
+                                <div class="d-flex flex-wrap gap-1 mb-2">
+                                    <span class="badge tech-badge">HTML</span>
+                                    <span class="badge tech-badge">CSS</span>
+                                    <span class="badge tech-badge">JavaScript</span>
+                                </div>
+                                <h3 class="h6 fw-bold mb-1">BakeYourSoul — S&P Interactive Game</h3>
+                                <p class="text-muted small mb-2">A bilingual interactive game that reveals which S&P
+                                    cake matches your personality.</p>
+                                <input type="checkbox" id="t6" class="read-cb" />
+                                <p class="read-body text-muted small">Built for S&P Bakery's "Crack the Cake" case
+                                    competition. Features typewriter animation, animated result reveals, Open Graph tags
+                                    for social sharing, and image preloading.</p>
+                                <label for="t6" class="read-label"></label>
+                                <div class="mt-2">
+                                    <a href="https://bakeyoursoul.vercel.app/" class="proj-link" target="_blank">Visit
+                                        Site</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="section py-5 contact-section text-center">
+                <div class="container">
+                    <h2 class="mb-0">Contact</h2>
+                    <ul class="list-unstyled d-flex flex-wrap justify-content-center gap-2 mt-4 mb-0">
+                        <li>
+                            <a class="btn contact-btn d-inline-flex align-items-center gap-2"
+                                href="mailto:nattapat_srirung@cmu.ac.th">
+                                <img src="img/email.png" class="contact-icon" alt="email" />Gmail
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn contact-btn d-inline-flex align-items-center gap-2"
+                                href="https://www.instagram.com/jalaleab.__/profilecard/?igsh=dTRqYmVvOGk1bTJ1"
+                                target="_blank">
+                                <img src="img/ig.png" class="contact-icon" alt="ig" />Instagram
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn contact-btn d-inline-flex align-items-center gap-2"
+                                href="https://www.facebook.com/profile.php?id=100011615046114" target="_blank">
+                                <img src="img/facebook.png" class="contact-icon" alt="fb" />Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn contact-btn d-inline-flex align-items-center gap-2"
+                                href="https://github.com/JeabtiE" target="_blank">
+                                <img src="img/github.png" class="contact-icon" alt="github" />GitHub
+                            </a>
+                        </li>
+                        <li>
+                            <a class="btn contact-btn d-inline-flex align-items-center gap-2"
+                                href="https://line.me/ti/p/WTSySvk23Z" target="_blank">
+                                <img src="img/line.png" class="contact-icon" alt="line" />Line
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer text-center py-3">
+            <p class="small mb-0">© 2026 Nattapat Srirung.</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
